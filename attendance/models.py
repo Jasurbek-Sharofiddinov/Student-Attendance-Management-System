@@ -4,47 +4,68 @@ from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 
-class User( AbstractUser ):
+class Admin(models.Model):
 	# user_types
-	user_type = ((1, "Admin"), (2, "Teacher"), (3, "Student"))
-
-	user_id = models.IntegerField( primary_key=True )
-	first_name = models.CharField( max_length=45 )
-	last_name = models.CharField( max_length=45 )
+	admin_id=models.AutoField(primary_key=True)
+	name = models.CharField( max_length=255 )
 	email = models.CharField( max_length=45 )
-	contact = models.IntegerField( max_length=12 )
-	user_type = models.IntegerField( default=1, choices=user_type, max_length=1 )
-
-class Course(models.Model ):
-	course_id = models.IntegerField( primary_key=True )
-	course_name = models.CharField( max_length=45 )
-
-class Subject(models.Model):
-	subject_id = models.IntegerField( primary_key=True )
-	subject_name = models.CharField( max_length=45 )
-	course_id = models.ForeignKey(Course,on_delete=models.CASCADE)
-	user_id = models.ForeignKey(User,on_delete=models.CASCADE)
-
-
-
-
-
-class Student( models.Model ):
-	admin=models.OneToOneField(User,on_delete=models.CASCADE)
-	subject_id=models.ForeignKey(Subject,on_delete=models.CASCADE)
-	course_id=models.ForeignKey(Course,on_delete=models.CASCADE)
+	password = models.CharField( max_length=45 )
+	created_at=models.DateTimeField(auto_now_add=True)
+	updated_at=models.DateTimeField(auto_now_add=True)
+	objects=models.Manager()
 
 class Teacher( models.Model ):
-	admin=models.OneToOneField(User,on_delete=models.CASCADE)
-	subject_id=models.ForeignKey(Subject,on_delete=models.CASCADE)
+	teacher_id=models.AutoField(primary_key=True)
+	name=models.CharField(max_length=255)
+	email=models.CharField(max_length=45)
+	password=models.CharField(max_length=45)
+	created_at=models.DateTimeField(auto_now_add=True)
+	updated_at=models.DateTimeField(auto_now_add=True)
+	objects = models.Manager()
 
+class Course(models.Model ):
+	course_id = models.AutoField(primary_key=True)
+	course_name = models.CharField(max_length=45)
+	created_at = models.DateTimeField( auto_now_add=True )
+	updated_at = models.DateTimeField( auto_now_add=True )
+	objects = models.Manager()
+
+class Subject(models.Model):
+	subject_id = models.AutoField(primary_key=True )
+	subject_name = models.CharField( max_length=45 )
+	course_id = models.ForeignKey(Course,on_delete=models.CASCADE)
+	teacher_id = models.ForeignKey(Teacher,on_delete=models.CASCADE)
+	created_at = models.DateTimeField( auto_now_add=True )
+	updated_at = models.DateTimeField( auto_now_add=True )
+	objects = models.Manager()
+
+
+class Student(models.Model):
+
+	student_id=models.AutoField(primary_key=True)
+	name = models.CharField( max_length=255 )
+	email = models.CharField( max_length=45 )
+	password = models.CharField( max_length=45 )
+	contact_n=models.CharField(max_length=12)
+	profile_pic=models.FileField()
+	course_id=models.ForeignKey(Course,on_delete=models.DO_NOTHING)
+	created_at = models.DateTimeField( auto_now_add=True )
+	updated_at = models.DateTimeField( auto_now_add=True )
+	objects = models.Manager()
 
 class Attendance( models.Model ):
-	present = ((1, "Present"), (0, "Absent"))
-
-
-	user_id = models.IntegerField()
+	attendance_id = models.AutoField(primary_key=True)
 	subject_id = models.ForeignKey( Subject,on_delete=models.CASCADE )
-	course_id = models.ForeignKey(Course,on_delete=models.CASCADE)
 	data = models.DateField()
-	status = models.IntegerField( default=0, choices=present, max_length=1 )
+	created_at=models.DateTimeField(auto_now_add=True)
+	updated_at=models.DateTimeField(auto_now_add=True)
+	objects = models.Manager()
+
+class AttendanceReport(models.Model):
+	report_id=models.AutoField(primary_key=True)
+	student_id=models.ForeignKey(Student,on_delete=models.DO_NOTHING)
+	attendance_id=models.ForeignKey(Attendance,on_delete=models.CASCADE)
+	status=models.BooleanField(default=False)
+	created_at = models.DateTimeField( auto_now_add=True )
+	updated_at = models.DateTimeField( auto_now_add=True )
+	objects = models.Manager()
