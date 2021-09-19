@@ -4,18 +4,35 @@
     <list default="true" id="0baf6c0e-9489-418f-aabe-0b66b3fffcfa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2/entities/entities.dat.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2/entities/entities.dat.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fab1e0f1-95e5-4fc8-b7ba-a53b729f66f2/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/attendance/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1xvynfRxDHNDQZ3oQdqeqBXaouL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Coding/student-management-using-django" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RunManager">
     <configuration name="Attendance" type="PythonConfigurationType" factoryName="Python">
@@ -68,7 +85,9 @@
       <workItem from="1631515415850" duration="3875000" />
       <workItem from="1631533582829" duration="2710000" />
       <workItem from="1631639570392" duration="7000" />
-      <workItem from="1631700894887" duration="6687000" />
+      <workItem from="1631700894887" duration="16737000" />
+      <workItem from="1631883355228" duration="13414000" />
+      <workItem from="1631953367799" duration="10967000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1631700937164</created>
@@ -77,7 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631700937164</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="models ready">
+      <created>1631721705699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631721705699</updated>
+    </task>
+    <task id="LOCAL-00003" summary="making routers to rest framework">
+      <created>1631890325432</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631890325432</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,9 +118,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st commit" />
+    <MESSAGE value="models ready" />
+    <MESSAGE value="making routers to rest framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="making routers to rest framework" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Student_Attendance_Management$Attendance.coverage" NAME="Attendance Coverage Results" MODIFIED="1631712751518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Student_Attendance_Management$Attendance.coverage" NAME="Attendance Coverage Results" MODIFIED="1631953927296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
